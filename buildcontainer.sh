@@ -4,4 +4,5 @@ docker build -f src/main/docker/Dockerfile.native-micro -t soopstudio/order .
 docker tag soopstudio/order:latest jkuif/soopstudio-order:0.0.1
 docker push jkuif/soopstudio-order:0.0.1
 
+echo "to run locally on your development env run:"
 echo "docker run -d --name soopstudio-order -e TZ=Europe/Amsterdam --detach --restart unless-stopped -p 8080:8080 soopstudio/order"
