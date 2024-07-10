@@ -6,7 +6,7 @@ A small and simple example of a Camel (Quarkus based) integration that polls a c
 ## Why did i build it
 My wife recently started a business producing and selling soap. When an order is done via her webshop i wanted to notify her, me and the kids of the new order :-)
 
-My requirement was to do this in a container and running it as a **native compiled executable to minimize the load and memory usage** on my Synology NAS. A nice thing from those containers is that they should be quite easy be able to be deployed on other container environments like AWS, Azure, Kubernetes or Openshift. The image is therefore publicly made available on docker hub.
+My requirement was to do this in a container and running it as a **native compiled executable to minimize the load and memory usage** on my Synology NAS. A nice thing from those containers is that they can be deployed on other container environments like AWS, Azure, Kubernetes or Openshift. The image is therefore publicly made available on docker hub.
 
 ## Configuration
 To run this integration locally in your IDE (i use IntelliJ) you can edit the [application.properties](src/main/resources/application.properties)
