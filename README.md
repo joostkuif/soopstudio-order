@@ -19,8 +19,8 @@ To run this integration locally in your IDE (i use IntelliJ) you can edit the [a
 
 ### to (producting)
 - homeassistant.server: The url with portnumer where the camel interface can connect to your homeassistant instance, for example http://homeassistant.local:8123 If you run into DNS issues, use the IP adress of your HA instance.
-- homeassistant.bearer: In Homeassistant, to be able to autenticate/authorize to the api you have to create a long lived token and put the value here
-- homeassistant.automation: In Homeassitant, under settings->automations you can create any automation, here you configure the name of your automation to be run.
+- homeassistant.bearer: In Homeassistant, to be able to authenticate and authorize to the api you have to create a Long-Lived Access Token (under your personal profile, tab security and then at the end of the page) and put the value here.
+- homeassistant.automation: In Homeassitant, under Settings -> Automations & Scenes  you can create any automation, here you configure the name of your automation to be run.
 
 ## Containerized
 You need to install [docker](https://docker.io). The native compilation with GraalVM into a linux executable will be done inside a linux container too.
