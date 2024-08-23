@@ -17,7 +17,7 @@ To run this integration locally in your IDE (i use IntelliJ) you can edit the [a
 - imap.password: The password, in my case with a google account i needed to enable multi factor authentication and create a specific app password
 - imap.pollfolder: The folder to poll, when a new unread message is found the integration will be triggered. this email wil get status read afterwards.
 
-### to (producting)
+### to (producing)
 - homeassistant.server: The url with portnumer where the camel interface can connect to your homeassistant instance, for example http://homeassistant.local:8123 If you run into DNS issues, use the IP adress of your HA instance.
 - homeassistant.bearer: In Homeassistant, to be able to autenticate/authorize to the api you have to create a long lived token and put the value here
 - homeassistant.automation: In Homeassitant, under settings->automations you can create any automation, here you configure the name of your automation to be run.
