@@ -6,7 +6,7 @@ A small and simple example of a Camel (Quarkus based) integration that polls a c
 ## Why did i build it
 My wife recently started a business producing and selling soap. When an order is done via her webshop i wanted to notify her, me and the kids of the new order :-)
 
-My requirement was to do this in a container and running it as a **native compiled executable to minimize the load and memory usage** on my Synology NAS. A nice thing from those containers is that they should be quite easy be able to be deployed on other container environments like AWS, Azure, Kubernetes or Openshift. The image is therefore publicly made available on docker hub.
+My requirement was to do this in a container and running it as a **native compiled executable to minimize the load and memory usage** on my Synology NAS. A nice thing from those containers is that they can be deployed on other container environments like AWS, Azure, Kubernetes or Openshift. The image is therefore publicly made available on docker hub.
 
 ## Configuration
 To run this integration locally in your IDE (i use IntelliJ) you can edit the [application.properties](src/main/resources/application.properties)
@@ -19,8 +19,8 @@ To run this integration locally in your IDE (i use IntelliJ) you can edit the [a
 
 ### to (producing)
 - homeassistant.server: The url with portnumer where the camel interface can connect to your homeassistant instance, for example http://homeassistant.local:8123 If you run into DNS issues, use the IP adress of your HA instance.
-- homeassistant.bearer: In Homeassistant, to be able to autenticate/authorize to the api you have to create a long lived token and put the value here
-- homeassistant.automation: In Homeassitant, under settings->automations you can create any automation, here you configure the name of your automation to be run.
+- homeassistant.bearer: In Homeassistant, to be able to authenticate and authorize to the api you have to create a Long-Lived Access Token (under your personal profile, tab security and then at the end of the page) and put the value here.
+- homeassistant.automation: In Homeassitant, under Settings -> Automations & Scenes  you can create any automation, here you configure the name of your automation to be run.
 
 ## Containerized
 You need to install [docker](https://docker.io). The native compilation with GraalVM into a linux executable will be done inside a linux container too.
